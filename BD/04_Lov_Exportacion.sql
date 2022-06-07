@@ -15,7 +15,7 @@ Commit;
 Exception
    When Others Then
       Rollback;
-      
+      raise_application_error(-20001,sqlerrm);
 End;
 
 /
